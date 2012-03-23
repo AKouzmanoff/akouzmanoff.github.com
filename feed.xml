@@ -1,57 +1,77 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Wintersmith's blog</title><atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link><link>http://localhost:8080</link><description>-32°C ain't no problems!</description><pubDate>Tue, 31 Jan 2012 15:00:00 -0600</pubDate><generator>The mighty Wintersmith</generator><language>en</language><item><title>Hello World</title><link>http://localhost:8080/articles/hello-world</link><pubDate>Tue, 31 Jan 2012 15:00:00 -0600</pubDate><guid isPermaLink="true">http://localhost:8080/articles/hello-world</guid><author></author><description>&lt;p&gt;Welcome to your new wintersmith site mortal.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Wintersmith's blog</title><atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link><link>http://localhost:8080</link><description>-32°C ain't no problems!</description><pubDate>Sat, 01 Oct 2011 15:00:00 -0500</pubDate><generator>The mighty Wintersmith</generator><language>en</language><item><title>Code and stuff!</title><link>http://localhost:8080/articles/another-test</link><pubDate>Sat, 01 Oct 2011 15:00:00 -0500</pubDate><guid isPermaLink="true">http://localhost:8080/articles/another-test</guid><author></author><description>&lt;p&gt;Syntax highlighting with highlight.js
 
 &lt;/p&gt;
-&lt;p&gt;This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
-If you want a bare bones example check out the site in &lt;code&gt;examples/basic/&lt;/code&gt; in the repository root or
-use &lt;code&gt;wintersmith new &lt;path&gt; --template basic&lt;/code&gt; when creating a new site.
+&lt;h3&gt;JavaScript&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; factorial(n) {
+  &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (n === &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) {
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;
+  }
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n * factorial(n - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;More samples&lt;/h2&gt;
+&lt;p&gt;Taken from &lt;a href=&quot;https://en.wikipedia.org/wiki/Hello_world_program_examples&quot;&gt;wikipedia&lt;/a&gt;.
 
 &lt;/p&gt;
-&lt;p&gt;Site structure:
+&lt;h3&gt;C&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;stdio.h&gt;&lt;/span&gt;
 
-&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;├── config.json                          site configuration &lt;span class=&quot;keyword&quot;&gt;and&lt;/span&gt; metadata
-├── contents
-│   ├── archive.md
-│   ├── articles                         each article is a subfolder of articles
-│   │   ├── another-test
-│   │   │   └── index.md
-│   │   ├── bamboo-cutter
-│   │   │   ├── Taketori_Monogatari.jpg
-│   │   │   └── index.md
-│   │   ├── hello-world
-│   │   │   └── index.md
-│   │   └── red-herring
-│   │       ├── banana.jpg
-│   │       └── index.md
-│   ├── authors                          &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; an author is set in an articles metadata it
-│   │   ├── baker.json                   will be read from here
-│   │   └── the-wintersmith.json
-│   ├── css
-│   │   ├── github.css
-│   │   └── main.css
-│   ├── feed.json                        json page that renders the rss feed to feed.xml
-│   ├── index.json
-└── templates
-    ├── archive.jade
-    ├── article.jade
-    ├── author.jade
-    ├── feed.jade
-    ├── index.jade
-    └── layout.jade&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Articles are sorted by date and the 3 most recent are shown (configurable in &lt;code&gt;config.json&lt;/code&gt;). All other articles
-are avalible via their permalink or the archive page.
+int main(void)
+{
+  printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello world\n&quot;&lt;/span&gt;);
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C++&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;iostream&gt;&lt;/span&gt;
 
-&lt;/p&gt;
-&lt;p&gt;Example article/post:
+int main()
+{
+  std::cout &lt;&lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &lt;&lt; std::endl;
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C-sharp&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; ExampleClass
+{
+    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void Main()
+    {
+        System.Console.WriteLine(&lt;span class=&quot;string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;);
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;COBOL&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;cobol&quot;&gt;       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO-WORLD.
+       PROCEDURE DIVISION.
+           DISPLAY 'Hello, world'.
+           STOP RUN.&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Erlang&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;erlang&quot;&gt;io:format(&quot;~s~n&quot;, [&quot;hello, world&quot;])&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Go&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;go&quot;&gt;package main
 
-&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;markdown&quot;&gt;title: My new shiny blog
-author: johndoe
-date: 2012-12-12 12:12
+import &quot;fmt&quot;
 
-# Hello!
+func main() {
+   fmt.Println(&quot;Hello World!&quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Java&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; HelloWorld {
+   &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void main(String[] args) {
+       System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;);
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;ObjectiveC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;objc&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#import &lt;stdio.h&gt;&lt;/span&gt;
 
-I'm an article. Bla bla bla so interesting.&lt;/code&gt;&lt;/pre&gt;
+int main(void)
+{
+    printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello, World!\n&quot;&lt;/span&gt;);
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;PHP&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;php&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;&lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'Hello, world'&lt;/span&gt;; &lt;span class=&quot;preprocessor&quot;&gt;?&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Ruby&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;puts &quot;Hello world!&quot;&lt;/code&gt;&lt;/pre&gt;
 </description></item><item><title>The tale of the bamboo-cutter</title><link>http://localhost:8080/articles/bamboo-cutter</link><pubDate>Sun, 01 May 2011 12:00:00 -0500</pubDate><guid isPermaLink="true">http://localhost:8080/articles/bamboo-cutter</guid><author></author><description>&lt;p&gt;&lt;img src=&quot;http:/localhost:8080/articles/bamboo-cutter/Taketori_Monogatari.jpg&quot; alt=&quot;image&quot;&gt;
 
 &lt;/p&gt;
@@ -319,80 +339,60 @@ I'm an article. Bla bla bla so interesting.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Princess Moonlight&apos;s letter was carried to the Palace. His Majesty was afraid to touch the Elixir of Life, so he sent it with the letter to the top of the most sacred mountain in the land. Mount Fuji, and there the Royal emissaries burnt it on the summit at sunrise. So to this day people say there is smoke to be seen rising from the top of Mount Fuji to the clouds.
 
 &lt;/p&gt;
-</description></item><item><title>Code and stuff!</title><link>http://localhost:8080/articles/another-test</link><pubDate>Sat, 01 Oct 2011 15:00:00 -0500</pubDate><guid isPermaLink="true">http://localhost:8080/articles/another-test</guid><author></author><description>&lt;p&gt;Syntax highlighting with highlight.js
+</description></item><item><title>Hello World</title><link>http://localhost:8080/articles/hello-world</link><pubDate>Tue, 31 Jan 2012 15:00:00 -0600</pubDate><guid isPermaLink="true">http://localhost:8080/articles/hello-world</guid><author></author><description>&lt;p&gt;Welcome to your new wintersmith site mortal.
 
 &lt;/p&gt;
-&lt;h3&gt;JavaScript&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; factorial(n) {
-  &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (n === &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) {
-    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;
-  }
-  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n * factorial(n - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;More samples&lt;/h2&gt;
-&lt;p&gt;Taken from &lt;a href=&quot;https://en.wikipedia.org/wiki/Hello_world_program_examples&quot;&gt;wikipedia&lt;/a&gt;.
+&lt;p&gt;This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
+If you want a bare bones example check out the site in &lt;code&gt;examples/basic/&lt;/code&gt; in the repository root or
+use &lt;code&gt;wintersmith new &lt;path&gt; --template basic&lt;/code&gt; when creating a new site.
 
 &lt;/p&gt;
-&lt;h3&gt;C&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;stdio.h&gt;&lt;/span&gt;
+&lt;p&gt;Site structure:
 
-int main(void)
-{
-  printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello world\n&quot;&lt;/span&gt;);
-  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;C++&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;iostream&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;├── config.json                          site configuration &lt;span class=&quot;keyword&quot;&gt;and&lt;/span&gt; metadata
+├── contents
+│   ├── archive.md
+│   ├── articles                         each article is a subfolder of articles
+│   │   ├── another-test
+│   │   │   └── index.md
+│   │   ├── bamboo-cutter
+│   │   │   ├── Taketori_Monogatari.jpg
+│   │   │   └── index.md
+│   │   ├── hello-world
+│   │   │   └── index.md
+│   │   └── red-herring
+│   │       ├── banana.jpg
+│   │       └── index.md
+│   ├── authors                          &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; an author is set in an articles metadata it
+│   │   ├── baker.json                   will be read from here
+│   │   └── the-wintersmith.json
+│   ├── css
+│   │   ├── github.css
+│   │   └── main.css
+│   ├── feed.json                        json page that renders the rss feed to feed.xml
+│   ├── index.json
+└── templates
+    ├── archive.jade
+    ├── article.jade
+    ├── author.jade
+    ├── feed.jade
+    ├── index.jade
+    └── layout.jade&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Articles are sorted by date and the 3 most recent are shown (configurable in &lt;code&gt;config.json&lt;/code&gt;). All other articles
+are avalible via their permalink or the archive page.
 
-int main()
-{
-  std::cout &lt;&lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &lt;&lt; std::endl;
-  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;C-sharp&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; ExampleClass
-{
-    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void Main()
-    {
-        System.Console.WriteLine(&lt;span class=&quot;string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;);
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;COBOL&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;cobol&quot;&gt;       IDENTIFICATION DIVISION.
-       PROGRAM-ID. HELLO-WORLD.
-       PROCEDURE DIVISION.
-           DISPLAY 'Hello, world'.
-           STOP RUN.&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Erlang&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;erlang&quot;&gt;io:format(&quot;~s~n&quot;, [&quot;hello, world&quot;])&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Go&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;go&quot;&gt;package main
+&lt;/p&gt;
+&lt;p&gt;Example article/post:
 
-import &quot;fmt&quot;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;markdown&quot;&gt;title: My new shiny blog
+author: johndoe
+date: 2012-12-12 12:12
 
-func main() {
-   fmt.Println(&quot;Hello World!&quot;)
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; HelloWorld {
-   &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void main(String[] args) {
-       System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;);
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;ObjectiveC&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;objc&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#import &lt;stdio.h&gt;&lt;/span&gt;
+# Hello!
 
-int main(void)
-{
-    printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello, World!\n&quot;&lt;/span&gt;);
-    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;PHP&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;php&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;&lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'Hello, world'&lt;/span&gt;; &lt;span class=&quot;preprocessor&quot;&gt;?&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Python&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Ruby&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;puts &quot;Hello world!&quot;&lt;/code&gt;&lt;/pre&gt;
+I'm an article. Bla bla bla so interesting.&lt;/code&gt;&lt;/pre&gt;
 </description></item><item><title>A red herring</title><link>http://localhost:8080/articles/red-herring</link><pubDate>Mon, 26 Dec 2011 12:20:00 -0600</pubDate><guid isPermaLink="true">http://localhost:8080/articles/red-herring</guid><author></author><description>&lt;p&gt;A long time ago, when the world was young
 Someone put some food on their tong
 They tasted the food, and thought it was nice
